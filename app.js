@@ -3,9 +3,9 @@
 alert('Hello');
 var userInput = prompt('What\'s your name');
 alert('Hi, ' + userInput);
-alert('My name is musa');
+alert('My name is Damon');
 alert('I was designed by Darius Marte');
-var knowMe = prompt('do you know him ?');
+var knowMe = prompt(userInput + ',' + ' do you know him ?');
 console.log(userInput);
 console.log(birthQ);
 var birthQ;
@@ -13,8 +13,7 @@ if (knowMe.toUpperCase() === 'YES' || knowMe.toUpperCase() === 'Y') {
   birthQ = prompt('I see... well do you know his birthday ?');
 }
 else {
-  alert('Not a valid answer my dear =)');
-  birthQ = prompt('Guess his birtday anyway !');
+  birthQ = 'NO';
 }
 
 
@@ -42,7 +41,7 @@ else {
   alert('Everything\'s going to be alright !');
 }
 
-var NumGues = prompt('Can you guess what number I am thinking of, pick 1 through 6, you have 4 attempts');
+var NumGues = prompt('Can you guess what number Darius is thinking of, pick 1 through 6, you have 4 attempts');
 
 for(var p = 1; p < 4; p++){
   if(NumGues === '1' ) {
@@ -56,7 +55,7 @@ for(var p = 1; p < 4; p++){
 var correct = false;
 var counter = 0;
 while(counter < 6 && correct === false) {
-  var canGuess = prompt('Can you guess what month I came to Portland, you have 6 attempts, make sure your answers are lowercase');
+  var canGuess = prompt('Can you guess what month Darius came to Portland, you have 6 attempts, make sure your answers are lowercase');
   var months = ['july','may','august','september','november','june' ];
   for(var i = 0; i < months.length; i++){
     console.log(months);

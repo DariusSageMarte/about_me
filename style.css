@@ -1,10 +1,11 @@
-h1 {
+div .header h1 {
 color:red;
-
+text-align: center;
+float:right;
 }
 
 body { 
-background-color: saddlebrown;
+background-color:palevioletred;
 
 }
 
