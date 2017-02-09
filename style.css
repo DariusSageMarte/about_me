@@ -7,3 +7,14 @@ body {
 background-color: saddlebrown;
 
 }
+
+div {
+    height:300px;
+    width:400px;
+
+}
+
+.right {
+    float: right;
+    
+}
