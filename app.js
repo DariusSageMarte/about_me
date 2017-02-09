@@ -39,46 +39,53 @@ function secondQuestion() {
 
 secondQuestion();
 
-// alert('since you\'re a friend of Darius, he\'d like me to ask');
-// var howBout = prompt('Are you OK ?', 'YES or NO');
-// if (howBout.toUpperCase() === 'YES' || howBout.toUpperCase() === 'Y') {
-//   console.log(howBout.toUpperCase());
-//   alert('I\'m happy to hear that ! ');
-// }
-// else {
-//   alert('Everything\'s going to be alright !');
-// }
+function questionThird() {
+  alert('since you\'re a friend of Darius, he\'d like me to ask');
+  var howBout = prompt('Are you OK ?', 'YES or NO');
+  if (howBout.toUpperCase() === 'YES' || howBout.toUpperCase() === 'Y') {
+    console.log(howBout.toUpperCase());
+    alert('I\'m happy to hear that ! ');
+  }
+  else {
+    alert('Everything\'s going to be alright !');
+  }
 
-// var NumGues = prompt('Can you guess what number Darius is thinking of, pick 1 through 6, you have 4 attempts');
+  var NumGues = prompt('Can you guess what number Darius is thinking of, pick 1 through 6, you have 4 attempts');
 
-// for(var p = 1; p < 4; p++){
-//   if(NumGues === '1' ) {
-//     alert('Good Job !! ');
-//     break;
-//   } else {
-//     NumGues = prompt('Try again', '1, 2, 3, 4, 5, 6');
-//   }
-// };
+  for(var p = 1; p < 4; p++){
+    if(NumGues === '1' ) {
+      alert('Good Job !! ');
+      break;
+    } else {
+      NumGues = prompt('Try again', '1, 2, 3, 4, 5, 6');
+    }
+  };
+}
 
-// var correct = false;
-// var counter = 0;
-// while(counter < 6 && correct === false) {
-//   var canGuess = prompt('Can you guess what month Darius came to Portland, you have 6 attempts, make sure your answers are lowercase');
-//   var months = ['july','may','august','september','november','june' ];
-//   for(var i = 0; i < months.length; i++){
-//     console.log(months);
-//     if(canGuess.toLowerCase() === months[i] ) {
-//       correct = true;
-//     }
+questionThird();
 
-//   };
-//   counter++;
-//   if (correct === true) {
-//     alert ('You da best !, and you\'re worth it !');
+function questionFour(){
+  var correct = false;
+  var counter = 0;
+  while(counter < 6 && correct === false) {
+    var canGuess = prompt('Can you guess what month Darius came to Portland, you have 6 attempts, make sure your answers are lowercase');
+    var months = ['july','may','august','september','november','june' ];
+    for(var i = 0; i < months.length; i++){
+      console.log(months);
+      if(canGuess.toLowerCase() === months[i] ) {
+        correct = true;
+      }
 
-//   }
-//   else {
-//     alert('nope');
-//   }
-// }
+    };
+    counter++;
+    if (correct === true) {
+      alert ('You da best !, and you\'re worth it !');
 
+    }
+    else {
+      alert('nope');
+    }
+  }
+}
+
+questionFour();
