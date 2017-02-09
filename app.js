@@ -1,5 +1,7 @@
 'use strict';
 
+var birthQ = '';
+
 function greeting() {
   alert('Hello');
   var userInput = prompt('What\'s your name');
@@ -9,7 +11,6 @@ function greeting() {
   var knowMe = prompt(userInput + ',' + ' do you know him ?');
   console.log(userInput);
   console.log(birthQ);
-  var birthQ;
   if (knowMe.toUpperCase() === 'YES' || knowMe.toUpperCase() === 'Y') {
     birthQ = prompt('I see... well do you know his birthday ?');
   }
@@ -20,19 +21,23 @@ function greeting() {
 
 greeting();
 
-// if (birthQ.toUpperCase() === 'NO' || birthQ.toUpperCase() === 'N') {
-//   alert('I thought not');
-// }
-// else if (birthQ.toUpperCase() === 'YES' || birthQ.toUpperCase() === 'Y') {
-//   var birthGuess = prompt('when is it ?', '528 or 628');
-//   if (birthGuess === '528') { console.log(birthGuess);
-//     alert('Correct!');
-//   }
-//   else {
-//     alert('Not Valid, You must mean No');
-//     birthQ = 'NO';
-//   }
-// }
+function secondQuestion() {
+  if (birthQ.toUpperCase() === 'NO' || birthQ.toUpperCase() === 'N') {
+    alert('I thought not');
+  }
+  else if (birthQ.toUpperCase() === 'YES' || birthQ.toUpperCase() === 'Y') {
+    var birthGuess = prompt('when is it ?', '528 or 628');
+    if (birthGuess === '528') { console.log(birthGuess);
+      alert('Correct!');
+    }
+    else {
+      alert('Not Valid, You must mean No');
+      birthQ = 'NO';
+    }
+  }
+}
+
+secondQuestion();
 
 // alert('since you\'re a friend of Darius, he\'d like me to ask');
 // var howBout = prompt('Are you OK ?', 'YES or NO');
