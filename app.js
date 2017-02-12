@@ -32,7 +32,7 @@ function secondQuestion() {
     }
     else {
       alert('Not Valid, You must mean No');
-      birthQ = 'NO';
+      
     }
   }
 }
@@ -47,7 +47,7 @@ function questionThird() {
     alert('I\'m happy to hear that ! ');
   }
   else {
-    alert('Everything\'s going to be alright !');
+    alert( howBout +' ? ' + ' Everything\'s going to be alright !');
   }
 
   var NumGues = prompt('Can you guess what number Darius is thinking of, pick 1 through 6, you have 4 attempts');

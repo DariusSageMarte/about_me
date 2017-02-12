@@ -1,9 +1,10 @@
 .header  {
-    color:red;
+    color: blanchedalmond;
     text-align: center;
     height:250px;
     width:100%;
     background-image: url("http://www.highpants.net/wp-content/uploads/2014/03/highpants-invisibility-cloak-active.jpg");
+    font-family: cursive;
 }
 
 h1, p {
@@ -12,10 +13,12 @@ h1, p {
 
 h1 {
     text-shadow: 2px 2px black;
+    
+    
 }
 
-p {
-text-shadow: 1.5px 1.5px black;
+h2 {
+ background-image: ;
 }
 
 body { 
@@ -24,5 +27,15 @@ background-color:palevioletred;
 
 .right {
     float: right;
-    
+    background-color: darkorange;
+}
+.eat_love {
+    float: left;
+    background-color: palegreen;
+}
+
+.back {
+   background-image:url("https://img.buzzfeed.com/buzzfeed-static/static/2014-10/23/21/campaign_images/webdr01/26-desktop-backgrounds-that-will-make-you-not-hat-2-1152-1414115599-1_dblbig.jpg" ); 
+  height: 100%;
+  width:100%x;
 }
